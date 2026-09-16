@@ -106,9 +106,7 @@ coursera-voc-analysis/
 ├── README.md
 ├── requirements.txt
 ├── coursera_voc_analysis.ipynb     # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
-└── data/                           # Kaggle
-    ├── Coursera_courses.csv
-    └── Coursera_reviews.csv
+
 ```
 
 <br>
@@ -120,7 +118,4 @@ Python 3.10+
 ```bash
 pip install -r requirements.txt
 ```
-
-Kaggle 링크에서 데이터를 내려받아 `data/` 폴더에 두면 노트북을 그대로 실행할 수 있다.
-
 <br>
