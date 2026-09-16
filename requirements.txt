@@ -1,0 +1,17 @@
+# Coursera VOC Analysis — dependencies
+# Python 3.10+
+#
+# 설치: pip install -r requirements.txt
+
+# --- 데이터 처리 ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- 시각화 ---
+matplotlib==3.8.4
+koreanize-matplotlib==0.1.1
+
+# --- 텍스트 / 감성 분석 ---
+vaderSentiment==3.3.2      # 규칙 기반 감성 점수 (compound)
+langdetect==1.0.9          # 비영어 리뷰 판별
+nltk==3.9.1                # 영어 불용어
