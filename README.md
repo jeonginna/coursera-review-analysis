@@ -105,7 +105,8 @@
 coursera-voc-analysis/
 ├── README.md
 ├── requirements.txt
-├── coursera_voc_analysis.ipynb     # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
+├── .gitignore
+└── coursera_voc_analysis.ipynb # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
 
 ```
 
@@ -118,4 +119,5 @@ Python 3.10+
 ```bash
 pip install -r requirements.txt
 ```
-<br>
+
+원본 데이터는 [Kaggle](https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera)에서 내려받을 것
