@@ -103,10 +103,10 @@
 
 ```
 coursera-voc-analysis/
-├── README.md
-├── requirements.txt
 ├── .gitignore
-└── coursera_voc_analysis.ipynb # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
+├── README.md
+├── coursera_voc_analysis.ipynb # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
+└── requirements.txt
 
 ```
 
