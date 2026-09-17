@@ -110,11 +110,12 @@
 ## 📁 저장소 구조
 
 ```
-coursera-voc-analysis/
-├── .gitignore
+coursera-review-analysis/
 ├── README.md
-├── coursera_voc_analysis.ipynb # 전체 분석 (EDA → 감성 분석 → 유형화 → 우선순위)
-└── requirements.txt
+├── requirements.txt
+├── .gitignore
+├── coursera_voc_analysis.ipynb
+└── voc_analysis_onepager.pdf
 
 ```
 
