@@ -8,8 +8,9 @@
 > **데이터 출처 관련** — Kaggle 공개 데이터셋(Coursera Course Reviews, 2015~2020)을 사용했다.
 > 원본 데이터는 아래 링크에서 직접 내려받을 수 있다.
 > 🔗 [Course Reviews on Coursera (Kaggle)](https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera)
-> 
-📄 [프로젝트 요약 (PDF)](voc_analysis_onepager.pdf)
+
+**📄 프로젝트 요약 (PDF)**
+(voc_analysis_onepager.pdf)
 
 <br>
 
