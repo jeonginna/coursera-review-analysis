@@ -1,15 +1,22 @@
-# 평점이 놓친 이탈 신호 — 온라인 강의 플랫폼 VOC 분석
+# 평점이 놓친 이탈 신호 : 온라인 강의 플랫폼 VOC 분석
 
 > 별점만으로는 보이지 않는 '**숨은 불만**'을 리뷰 텍스트에서 발굴해,
 > 품질 이슈 강좌를 선별하고 개선 우선순위를 도출한 프로젝트
 
+<br>
+
 **분석 기간** 2026.06.01 ~ 2026.06.09 · **도구** Python (VADER, Pandas) · **데이터** 강좌 623개 / 리뷰 1,454,711건
 
-> **데이터 출처 관련** — Kaggle 공개 데이터셋(Coursera Course Reviews, 2015~2020)을 사용했다.
+<br>
+
+> **데이터 관련** — Kaggle 공개 데이터셋(Coursera Course Reviews, 2015~2020)을 사용했다.
 > 원본 데이터는 아래 링크에서 직접 내려받을 수 있다.
 > 🔗 [Course Reviews on Coursera (Kaggle)](https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera)
 
-📄 [프로젝트 요약 (PDF)](voc_analysis_onepaper.pdf)
+<br>
+
+**프로젝트 요약 One Paper**
+> [📄PDF 파일 보기](voc_analysis_onepaper.pdf)
 
 <br>
 
@@ -58,7 +65,7 @@
 4·5점이 94.4%를 차지해 평균값으로는 강좌 간 품질 차이를 구분할 수 없었다.
 3점(3.3%)이 1-2점 합(2.3%)보다 많아, **1-3점을 부정 리뷰로 재정의**했다.
 
-**2. 비율과 개수를 함께 봐야 한다**
+**2. 비율과 개수를 함께 확인해야 한다**
 
 부정 비율만 보면 표본 크기에 속을 수 있다(리뷰 6건짜리 강좌가 부정 100%).
 비율·개수 두 축을 결합해 569개를 균형 있게 분류한 결과, **최우선 개선군 192개**를 선별했다.
@@ -70,9 +77,9 @@
 | 규모 위험 (비율↓ 개수↑) | 93 |
 | 양호 | 189 |
 
-**3. 감성 점수의 언어별 오차를 보정했다**
+**3. 감성 점수의 언어별 오차 보정**
 
-리뷰 언어는 영어 64%, 스페인어 31%, 포르투갈어 3%로 구성돼 있었다.
+리뷰 언어는 영어 64%, 스페인어 31%, 포르투갈어 3%로 구성되어 있었다.
 VADER는 영어 기반 모델이므로, **감성 점수가 낮아도 내용은 칭찬인 비영어 리뷰가 약 1/3**을 차지했다.
 `langdetect`로 언어를 식별해 영어 리뷰로만 필터링하고, 실제 부정 리뷰를 12,028건으로 확정했다.
 
@@ -94,7 +101,7 @@ VADER는 영어 기반 모델이므로, **감성 점수가 낮아도 내용은 �
 
 <br>
 
-## 🛠 개선 제안
+## 🛠 개선안 제안
 
 | 문제 유형 | 개선안 |
 |---|---|
@@ -117,7 +124,6 @@ coursera-review-analysis/
 ├── README.md  
 ├── coursera_voc_analysis.ipynb
 ├── requirements.txt
-└── voc_analysis_onepager.pdf
 
 ```
 
@@ -131,4 +137,4 @@ Python 3.10+
 pip install -r requirements.txt
 ```
 
-원본 데이터는 [Kaggle](https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera)에서 내려받을 것
+원본 데이터는 [Kaggle](https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera)에서 내려받을 것.
